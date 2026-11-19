@@ -1,0 +1,14 @@
+diff --git a/contrib/src/main.mak b/contrib/src/main.mak
+index 9190964b7d..9a7e09922f 100644
+--- a/contrib/src/main.mak
++++ b/contrib/src/main.mak
+@@ -476,7 +476,8 @@ endif
+ 
+ AUTORECONF = GTKDOCIZE=true autoreconf
+ RECONF = mkdir -p -- $(PREFIX)/share/aclocal && \
+-	cd $< && $(VLC_CONFIG_GUESS) $(AUTORECONF) -fiv
++	cd $< && $(VLC_CONFIG_GUESS) $(AUTORECONF) -fiv && \
++	if test -f ltmain.sh && test -f build-aux/ltmain.sh; then cp -f ltmain.sh build-aux/ltmain.sh; fi
+ 
+ BUILD_DIR = $</vlc_build
+ BUILD_SRC := ..

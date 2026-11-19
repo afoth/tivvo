@@ -3,5 +3,5 @@
 https://demo.unified-streaming.com/k8s/features/stable/video/tears-of-steel/tears-of-steel.ism/.m3u8
 #EXTINF:-1 tvg-id="big-buck-bunny" group-title="Open movies (CC BY)",Big Buck Bunny (Blender Foundation)
 https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8
-#EXTINF:-1 tvg-id="apple-bipbop" group-title="Test streams",Apple Bip-Bop Example Stream
+#EXTINF:-1 tvg-id="test-card" group-title="Test streams",Test Card (HLS example)
 https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
